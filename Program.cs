@@ -1,26 +1,32 @@
 ﻿using System;
 
-namespace HomeTask
+namespace Hometask
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n = 7;
-            int m = 21;
-            int count = 0;
-                for (int i = n; i <= m; i++)
+            string month = "Fevral";
+            switch (month)
             {
-                if (i % 7 == 0)
-                {
-                    count++;
-                        Console.WriteLine(count);
-                }
-                {
-
-                }
-            }
-            {
+                case "Fevral":
+                    Console.WriteLine("28");
+                    break;
+                case "Yanvar":
+                case "Mart":
+                case "May":
+                case "Iyul":
+                case "Avqust":
+                case "Oktyabr":
+                case "Dekabr":
+                    Console.WriteLine("31");
+                    break;
+                case "Sentyabr":
+                case "Noyabr":
+                case "Aprel":
+                case "Iyun":
+                    Console.WriteLine("30");
+                    break;
 
             }
         }
